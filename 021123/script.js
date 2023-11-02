@@ -1,4 +1,4 @@
-let selectOptions = document.getElementById("locationInput");
+// let selectOptions = document.getElementById("locationInput");
 
 function fetchExtData (url) {
     fetch(url)
@@ -11,7 +11,7 @@ function fetchExtData (url) {
 }
 
 function onHTMLLoad () {
-
+    
 }
 
 let json = fetchExtData("giagia");
