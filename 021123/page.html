@@ -1,26 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Anagrafica 3.0</title>
+    <meta charset="UTF-8">
+    <title>Anagrafica 3.0</title>
 </head>
-	<body>
-		<p><a href="../index.html">Pag. Principale</a></p>
-		<h1>Anagrafe 3.0 HTML</h1>
+<body>
+<p><a href="../index.html">Pag. Principale</a></p>
+<h1>Anagrafe 3.0 HTML</h1>
 
-		Nome:
-		<input type="text" id="nameInput">
-		<p></p>
-		Cognome:
-		<input type="text" id="lastNameInput">
-		<p></p>
-		Nascita:
-		<input type="date" id="birthdayInput">
-		<p></p>
-		Luogo: <select id="locationInput">
+Nome:
+<input type="text" id="nameInput">
+<p></p>
+Cognome:
+<input type="text" id="lastNameInput">
+<p></p>
+Nascita:
+<input type="date" id="birthdayInput">
+<p></p>
+Luogo: <select id="locationInput">
 
-		</select>
-	</body>
+</select>
+<p></p>
+Sesso:
+<form id="genderForm">
+	<label>
+		<input type="radio" name="gender" value="Maschio"> Maschio
+	</label>
+	<br>
+	<label>
+		<input type="radio" name="gender" value="Femmina"> Femmina
+	</label>
+	<br>
+</form>
+
+<p></p>
+<button id="confirmButton">CONFERMA</button>
+
+<p></p>
+<h4 id="headerToChange">RISULTATO:</h4>
+</body>
 </html>
 
 <script src="script.js"></script>
