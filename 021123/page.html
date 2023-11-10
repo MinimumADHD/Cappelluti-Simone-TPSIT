@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Anagrafica 3.0</title>
+	<meta charset="UTF-8">
+	<title>Anagrafica 3.0</title>
 </head>
 <body>
 <p><a href="../index.html">Pag. Principale</a></p>
 <h1>Anagrafe 3.0 HTML</h1>
 
 Nome:
-<input type="text" id="nameInput">
+<input id="nameInput"
+       type="text">
 <p></p>
 Cognome:
-<input type="text" id="lastNameInput">
+<input id="lastNameInput"
+       type="text">
 <p></p>
 Nascita:
-<input type="date" id="birthdayInput">
+<input id="birthdayInput"
+       type="date">
 <p></p>
 Luogo: <select id="locationInput">
 
@@ -24,11 +27,15 @@ Luogo: <select id="locationInput">
 Sesso:
 <form id="genderForm">
 	<label>
-		<input type="radio" name="gender" value="Maschio"> Maschio
+		<input name="gender"
+		       type="radio"
+		       value="Maschio"> Maschio
 	</label>
 	<br>
 	<label>
-		<input type="radio" name="gender" value="Femmina"> Femmina
+		<input name="gender"
+		       type="radio"
+		       value="Femmina"> Femmina
 	</label>
 	<br>
 </form>
