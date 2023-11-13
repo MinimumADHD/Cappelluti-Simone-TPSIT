@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "Fira Code Header";
+    src: url('https://raw.githubusercontent.com/MinimumADHD/gitFontsArchive/main/Fira%20Code/woff/FiraCode-Bold.woff') format("woff");
+}
+
+@font-face {
+    font-family: "Fira Code Paragraph";
+    src: url('https://raw.githubusercontent.com/MinimumADHD/gitFontsArchive/main/Fira%20Code/woff/FiraCode-SemiBold.woff') format("woff");
+}
+
+body {
+    background: #71685A;
+}
+
+.container {
+    background: #71685A;
+    font-family: "Fira Code Header", monospace, Inconsolata;
+}
+
+.div_links {
+    background: #99835e;
+    font-family: "Fira Code Paragraph", monospace, Inconsolata;
+    font-size: 11px;
+}
