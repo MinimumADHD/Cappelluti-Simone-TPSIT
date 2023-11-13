@@ -3,8 +3,12 @@
     src: url('https://raw.githubusercontent.com/MinimumADHD/gitFontsArchive/main/Fira%20Code/woff/FiraCode-SemiBold.woff') format("woff");
 }
 
+body {
+    background: #E3A542;
+}
+
 .header_div {
-    background: cornsilk;
+    background: #BF8B37;
     font-family: "Fira Code Bold", monospace, Inconsolata;
     padding: 20px;
     display: flex;
