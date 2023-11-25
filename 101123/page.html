@@ -1,22 +1,53 @@
 <!doctype html>
 <html lang="it">
-	<head>
-		<meta charset="UTF-8"></meta>
-		<title>Calcolatrice</title>
-		<link
-				rel = "stylesheet"
-				href = "style.css"
-		>
-	</head>
-	<body>
+
+<head>
+	<meta charset="UTF-8">
+	</meta>
+	<title>Calcolatrice</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
 	<div class="container">
 		<div class="header_div">
 			<h2 id="header_to_capture">Calcolatrice HTML5</h2>
-			<p><a href = "../index.html">Pag. Principale</a></p>
+			<p><a href="../index.html">Pag. Principale</a></p>
 			<p id="current_font_info">Current Font: </p>
 		</div>
+		<div class="calculator_div">
+			<div class="input_pad">
+				<p>
+					<label id="inputShow"></label>
+					<label id="outputShow"></label>
+				</p>
+				<p>
+					<input type="button" value="clear" id="clear_btn">
+					<input type="button" value="=" id="equal_btn">
+				</p>
+				<p>
+					<input type="button" value="7">
+					<input type="button" value="8">
+					<input type="button" value="9">
+					<input type="button" value="+">
+				</p>
+				<p>
+					<input type="button" value="4">
+					<input type="button" value="5">
+					<input type="button" value="6">
+					<input type="button" value="-">
+				</p>
+				<p>
+					<input type="button" value="1">
+					<input type="button" value="2">
+					<input type="button" value="3">
+					<input type="button" value="x">
+				</p>
+			</div>
+		</div>
 	</div>
-	</body>
+</body>
+
 </html>
 
-<script src = "script.js"></script>
+<script src="script.js"></script>

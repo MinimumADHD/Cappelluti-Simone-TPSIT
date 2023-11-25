@@ -16,9 +16,42 @@ body {
     align-items: center;
 }
 
-.header_div h2 {
-    margin: 0;
-}
+.header_div h2,
 .header_div p {
     margin: 0;
+}
+
+.calculator_div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.input_pad {
+    background: #71685A;
+    font-family: "Fira Code Bold";
+}
+
+.input_pad input[type="button"] {
+    border: 0;
+    border-radius: 20%;
+    box-shadow: 0 0 5px #4f4944;
+    background: #a9a9a9;
+    font-family: "Fira Code Bold";
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.input_pad #clear_btn {
+    font-size: small;
+}
+
+.input_pad #inputShow {
+    display: block;
+    visibility: visible !important;
+    background-color: aquamarine;
+    text-align: center;
 }
