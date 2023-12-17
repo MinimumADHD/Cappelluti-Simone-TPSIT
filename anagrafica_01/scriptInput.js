@@ -69,6 +69,6 @@ confirmButton.addEventListener('click', function () {
     let nameInputVal = nameInput.value;
     let lastNameInputVal = lastNameInput.value;
 
-    uploadDataToStorage("anagraficaStorage", nameInputVal, lastNameInputVal, getGender(genderInput));
+    uploadDataToStorage("anagraficaStorage", nameInputVal, lastNameInputVal, getGender(genderInput), calcAge(birthdayInput.value), birthdayInput.value, selectOptions.value);
     window.location.href = "ouputPage.html";
 });

@@ -1,29 +1,27 @@
+/* simone cappelluti */
+
 @font-face {
-    font-family: "Fira Code Bold";
+    font-family: "Fira Code";
     src: url('https://raw.githubusercontent.com/MinimumADHD/gitFontsArchive/main/Fira%20Code/woff/FiraCode-SemiBold.woff') format("woff");
-}
-html, body, div, h1, p, a {
-    margin: 0;
-    padding: 0;
 }
 
 body {
-    background-color: #f4f4f4;
-    font-family: "Fira Code Bold", Arial, sans-serif;
+    background-color: #f0f0f0;
+    font-family: "Fira Code", monospace;
+    margin: 0;
 }
 
 .pageHeader {
-    background-color: #333;
+    background: linear-gradient(to right, #757575, #BF8B37);
     color: #fff;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
 }
 
 .pageHeader a {
-    color: #fff;
     text-decoration: none;
-    font-weight: bold;
-    margin-right: 20px;
+    color: #fff;
+    font-size: 16px;
 }
 
 .pageHeader a:hover {
@@ -31,22 +29,53 @@ body {
 }
 
 .pageHeader h1 {
-    margin-top: 10px;
+    margin: 10px 0;
 }
 
 .dataOutput {
-    margin: 20px;
+    padding: 20px;
 }
 
 .dataOutput p {
-    font-size: 16px;
     margin-bottom: 10px;
+    font-size: 16px;
 }
 
-#nameParagraph {
-    color: #007bff;
+#nameParagraph,
+#lastNameParagraph,
+#ageParagraph,
+#birthDay,
+#genderParagraph,
+#placeOfBirth {
+    color: #333;
 }
 
-#lastNameParagraph {
-    color: #28a745;
+#nameParagraph::before {
+    content: "Nome: ";
+    font-weight: bold;
+}
+
+#lastNameParagraph::before {
+    content: "Cognome: ";
+    font-weight: bold;
+}
+
+#ageParagraph::before {
+    content: "Età: ";
+    font-weight: bold;
+}
+
+#birthDay::before {
+    content: "Data di Nascita: ";
+    font-weight: bold;
+}
+
+#genderParagraph::before {
+    content: "Sesso: ";
+    font-weight: bold;
+}
+
+#placeOfBirth::before {
+    content: "Luogo di Nascita: ";
+    font-weight: bold;
 }
