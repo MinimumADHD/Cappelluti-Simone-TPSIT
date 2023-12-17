@@ -1,6 +1,3 @@
-// Simone Cappelluti
-// Code is Open Source, as its just a school assignment. Do whatever you want not like i really care, i code games 💀;
-
 let confirmButton = document.getElementById('confirmButton');
 let selectOptions = document.getElementById('locationInput');
 
@@ -9,19 +6,27 @@ let lastNameInput = document.getElementById("lastNameInput");
 let birthdayInput = document.getElementById("birthdayInput");
 let genderInput = document.getElementById("genderForm");
 
-// Function made to memo my sjhat
 function uploadDataToStorage(keyName, ...options) {
-    // i declared an empty array because why not?
-    let tempData = {}
+    let tempData = {};
     for (let i = 0; i < options.length; i++) {
-        // filling the array (in the most unoptimal way possible)
-        tempData.push(toString(options[i]));
+        tempData[i] = options[i].toString();
     }
-    // i dont even know why i would need to set the name as a string but ill let whoever made JavaScript decide (idiot)
     localStorage.setItem(keyName, JSON.stringify(tempData));
 }
 
-// JUST SOME OLD CODE I COPIED FROM MY OLD anagraphics/script.js FOLDER...
+function calcAge(birthday) {
+    let tDay = new Date();
+    let birthDate = new Date(birthday);
+
+    let age = tDay.getFullYear() - birthDate.getFullYear();
+
+    if (tDay.getMonth() < birthDate.getMonth() || (tDay.getMonth() === birthDate.getMonth() && tDay.getDate() < birthDate.getDate())) {
+        age--;
+    }
+
+    return age;
+}
+
 function fetchExtData(url) {
     return fetch(url)
         .then(response => response.json())
@@ -55,16 +60,15 @@ function onHTMLLoad() {
 
 function getGender(genderForm) {
     let selected = genderForm.querySelector('input[name="gender"]:checked');
-
     return selected.value;
 }
-// END OF OLD CODE
 
-onHTMLLoad()
+onHTMLLoad();
 
 confirmButton.addEventListener('click', function () {
     let nameInputVal = nameInput.value;
     let lastNameInputVal = lastNameInput.value;
 
-    uploadDataToStorage("anagraficaStorage", nameInputVal, lastNameInputVal, );
+    uploadDataToStorage("anagraficaStorage", nameInputVal, lastNameInputVal, getGender(genderInput));
+    window.location.href = "ouputPage.html";
 });
