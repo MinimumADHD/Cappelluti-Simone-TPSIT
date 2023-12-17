@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "Fira Code Bold";
+    src: url('https://raw.githubusercontent.com/MinimumADHD/gitFontsArchive/main/Fira%20Code/woff/FiraCode-SemiBold.woff') format("woff");
+}
+
+.pageHeader {
+    background: #BF8B37;
+    font-family: "Fira Code Bold", monospace, Inconsolata;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_div h1,
+.header_div p {
+    margin: 0;
+}
