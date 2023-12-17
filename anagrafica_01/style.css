@@ -1,18 +1,75 @@
 @font-face {
-    font-family: "Fira Code Bold";
+    font-family: "Fira Code";
     src: url('https://raw.githubusercontent.com/MinimumADHD/gitFontsArchive/main/Fira%20Code/woff/FiraCode-SemiBold.woff') format("woff");
 }
 
-.pageHeader {
-    background: #BF8B37;
-    font-family: "Fira Code Bold", monospace, Inconsolata;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+body {
+    background-color: #f0f0f0;
+    font-family: "Fira Code", monospace;
+    margin: 0;
 }
 
-.header_div h1,
-.header_div p {
+.pageHeader {
+    background: linear-gradient(to right, #757575, #BF8B37);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.pageHeader p {
     margin: 0;
+    font-size: 14px;
+}
+
+.pageHeader a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+.pageHeader a:hover {
+    color: #ffd700;
+}
+
+.pageHeader h1 {
+    margin: 10px 0;
+}
+
+.else {
+    padding: 20px;
+}
+
+.names,
+.geninfo,
+.gender {
+    margin-bottom: 20px;
+}
+
+.names input,
+.geninfo input,
+.geninfo select,
+.gender input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.button {
+    background-color: #BF8B37;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #ffd700;
+}
+
+#poo {
+    color: #BF8B37;
+    font-size: 18px;
+    font-weight: bold;
 }
