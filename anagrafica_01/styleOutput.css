@@ -2,19 +2,16 @@
     font-family: "Fira Code Bold";
     src: url('https://raw.githubusercontent.com/MinimumADHD/gitFontsArchive/main/Fira%20Code/woff/FiraCode-SemiBold.woff') format("woff");
 }
-/* Reset some default browser styles */
 html, body, div, h1, p, a {
     margin: 0;
     padding: 0;
 }
 
-/* Apply a background color to the body */
 body {
     background-color: #f4f4f4;
-    font-family: "Fira Code Bold", Arial, sans-serif; /* Use the custom font as fallback */
+    font-family: "Fira Code Bold", Arial, sans-serif;
 }
 
-/* Style the page header */
 .pageHeader {
     background-color: #333;
     color: #fff;
@@ -33,27 +30,23 @@ body {
     text-decoration: underline;
 }
 
-/* Style the h1 in the page header */
 .pageHeader h1 {
     margin-top: 10px;
 }
 
-/* Style the data output section */
 .dataOutput {
     margin: 20px;
 }
 
-/* Style the paragraphs inside data output */
 .dataOutput p {
     font-size: 16px;
     margin-bottom: 10px;
 }
 
-/* Style specific paragraphs by their IDs */
 #nameParagraph {
-    color: #007bff; /* Blue color */
+    color: #007bff;
 }
 
 #lastNameParagraph {
-    color: #28a745; /* Green color */
+    color: #28a745;
 }
