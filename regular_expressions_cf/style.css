@@ -1,0 +1,68 @@
+@font-face {
+    font-family: "Fira Code";
+    src: url('https://raw.githubusercontent.com/MinimumADHD/gitFontsArchive/main/Fira%20Code/woff/FiraCode-SemiBold.woff') format("woff");
+}
+
+body, h1, h2, p, input {
+    margin: 0;
+    font-family: "Fira Code", monospace;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.PageHeader {
+    background-color: #3498db;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.PageHeader h1 {
+    font-size: 24px;
+}
+
+.PageHeader a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.UserContext {
+    margin: 20px;
+    text-align: center;
+}
+
+#InputTypeText {
+    padding: 10px;
+    font-size: 16px;
+}
+
+#ValidationButton {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #2ecc71;
+    color: #fff;
+    cursor: pointer;
+}
+
+.OutputContext {
+    margin: 20px;
+    text-align: center;
+}
+
+#OutputLabel {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #e74c3c;
+}
+
+#instructions {
+    margin-top: 10px;
+    font-size: 10px;
+    color: rgb(84, 147, 172);
+}
