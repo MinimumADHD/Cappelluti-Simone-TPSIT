@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "Fira Code";
+    src: url('https://raw.githubusercontent.com/MinimumADHD/gitFontsArchive/main/Fira%20Code/woff/FiraCode-SemiBold.woff') format("woff");
+}
+
+body {
+    background-color: #2e3440;
+    color: #d8dee9;
+    font-family: 'Fira Code', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #3b4252; /* Darker background color for header */
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.header h3 {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+}
+
+.inputDiv {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+.inputContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.inputClassList {
+    flex: 1;
+    background-color: #3b4252;
+    color: #eceff4;
+    border: none;
+    padding: 10px; /* Add padding to input text */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: 'Fira Code', monospace;
+}
+
+.inputClassList::placeholder {
+    color: #a3be8c;
+}
+
+.inputClassList:focus {
+    outline: none;
+    border: 2px solid #81a1c1;
+}
+
+.inputClassNumber {
+    flex: 1;
+    background-color: #3b4252;
+    color: #eceff4;
+    border: none;
+    width: 14%;
+    height: 10%;
+    padding: 10px; /* Add padding to input text */
+    border-radius: 5px;
+    margin-left: 10px;
+    font-family: 'Fira Code', monospace;
+}
+
+.inputClassQuantity {
+    flex: 1;
+    background-color: #3b4252;
+    color: #eceff4;
+    border: none;
+    width: 16%;
+    height: 10%;
+    padding: 10px; /* Add padding to input text */
+    border-radius: 5px;
+    margin-left: 10px;
+    font-family: 'Fira Code', monospace;
+}
+
+.removeButton {
+    background-color: #bf616a;
+    color: #eceff4;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.addZone {
+    text-align: center;
+}
+
+#addButton,
+#confirmButton {
+    background-color: #5e81ac;
+    color: #eceff4;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px; /* Add margin-bottom for spacing between buttons */
+}
+
+#addButton:hover,
+#confirmButton:hover,
+#removeButton:hover {
+    background-color: #81a1c1;
+}
+
+.header a {
+    text-decoration: none;
+    color: #d8dee9;
+    transition: color 0.3s ease-in-out;
+}
+
+.header a:hover {
+    color: #d8dee9;
+}
