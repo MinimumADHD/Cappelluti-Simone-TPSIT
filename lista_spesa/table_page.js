@@ -59,7 +59,6 @@ function genTableAndDownloadButton() {
             quantityCell.textContent = storedQuantitiesArr[index];
         }
 
-        // Append table to the container div
         containerDiv.appendChild(table);
 
         // Create a button to download the table as Excel
@@ -72,7 +71,6 @@ function genTableAndDownloadButton() {
 
         containerDiv.appendChild(downloadButton);
 
-        // Append container div to the document body
         document.body.appendChild(containerDiv);
 
     } else {
