@@ -1,0 +1,14 @@
+{
+  "name": "cappelluti-simone-tpsit",
+  "version": "1.0.0",
+  "description": "Just a readme I'm making for personal note",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npx tailwindcss -i ./TailwindInput.css -o ./TailwindStyle.css --watch",
+    "build": "npx tailwindcss -i ./TailwindInput.css -o ./TailwindStyle.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

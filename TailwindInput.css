@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Fira Code";
+    font-style: SemiBold;
+    font-weight: 400;
+    font-display: swap;
+    src: url("https://raw.githubusercontent.com/MinimumADHD/gitFontsArchive/main/Fira%20Code/woff/FiraCode-SemiBold.woff")
+      format("woff");
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: "Space Mono";
+    font-style: SemiBold;
+    font-weight: 400;
+    font-display: swap;
+    src: url("https://raw.githubusercontent.com/MinimumADHD/gitFontsArchive/main/SpaceMono/SpaceMono-Regular.woff")
+      format("woff");
+  }
+}
