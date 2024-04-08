@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curzio 1</title>
+    <link rel="stylesheet" href="../TailwindStyle.css">
+</head>
+
+<body class="bg-gradient-to-b from-slate-500 to-slate-700 h-[100vh] font-spacemono">
+    <header
+        class="flex justify-between align-middle items-center font-spacemono h-[60px] w-full min-w-[90%] px-3 bg-slate-600 text-white shadow-xl backdrop-blur-xl">
+        <a href="https://github.com/MinimumADHD/Cappelluti-Simone-TPSIT">Repo GitHub</a>
+        <p class="font-extrabold text-[25px]">CURZIO 1</p>
+        <a href="../" class="motion-safe:animate-pulse">Pagina Principale</a>
+    </header>
+    <main class="flex justify-center align-middle items-center m-4 p-4">
+        <select id="colorSelect" multiple onchange="changeColor()" class="rounded-xl bg-slate-200 w-[200px] h-[200px] flex align-middle items-center justify-center">
+            <option value="red">Rosso</option>
+            <option value="blue">Blu</option>
+            <option value="green">Verde</option>
+            <option value="yellow">Giallo</option>
+        </select>
+    
+        <div class="grid rounded-xl bg-slate-200 m-2 p-2 w-[200px] h-[200px]">
+            <input class="block" type="radio" name="fontSize" value="small" onclick="changeFontSize()"> Small
+            <input class="block" type="radio" name="fontSize" value="medium" onclick="changeFontSize()"> Medium
+            <input class="block" type="radio" name="fontSize" value="large" onclick="changeFontSize()"> Large
+            <input class="block" type="radio" name="fontSize" value="x-large" onclick="changeFontSize()"> X-Large
+        </div>
+    
+        <p id="textParagraph" class="rounded-2xl bg-slate-300 w-[400px] h-[100px] flex items-center align-middle justify-center font-fira">Paragrafo di preview del testo.</p>
+    </main>
+
+</body>
+
+</html>
+
+<script src="script.js"></script>
