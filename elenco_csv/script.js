@@ -23,7 +23,6 @@ function handleFileSelect(event) {
             row.className = "border-1 border-[#aeecf4] shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#aeecf4,0_0_15px_#aeecf4,0_0_30px_#aeecf4]";
             
             var cells = rows[i].split(",");
-            slate
             for (var j = 0; j < cells.length; j++) {
                 var cell = document.createElement(i === 0 ? "th" : "td");
                 cell.textContent = cells[j];
